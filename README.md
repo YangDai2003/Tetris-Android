@@ -26,8 +26,7 @@ Download latest APK [here](https://github.com/YangDai-Github/Tetris-Android/blob
 - The drop speed of the box increases with the number of rows eliminated (one level for every 20 lines);
 
 ## :camera_flash: Screenshots
-<img src="/results/screenshot.gif" width="480">
-
+<img src="https://github.com/YangDai-Github/Tetris-Android/assets/107718193/9520a96a-c4ec-4429-a124-a4522d0efde3" width="20%">
 
 ## License
 ```
