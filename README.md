@@ -19,7 +19,7 @@ A tetris game fully built using [Jetpack Compose](https://developer.android.com/
 - Game sound and clock
 - Inspired by [react-tetris](https://github.com/chvin/react-tetris/blob/master/README-EN.md)
 
-Download latest APK [here](https://github.com/vitaviva/compose-tetris/actions)
+Download latest APK [here](https://github.com/YangDai-Github/Tetris-Android/blob/master/app/release/app-release.apk)
 
 #### Game Rules：
 - 100 points for 1 line, 300 points for 2 lines, 700 points for 3 lines, 1500 points for 4 lines;
