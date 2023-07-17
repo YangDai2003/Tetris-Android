@@ -2,7 +2,6 @@
 
 [English](https://github.com/vitaviva/fragivity/blob/master/README.md) | 中文介绍
 
-![](https://img.shields.io/badge/jetpack_compose-1.0.0_beta02-green.svg)
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
 
 ## :scroll: Description
@@ -23,14 +22,6 @@
 - 一次消除1行得100分、2行得300分、3行得700分、4行得1500分；
 - 方块掉落速度会随着消除的行数增加（每20行增加一个级别）；
 
-<br/>
-
-## :nut_and_bolt: MVI Architecture:
-
-<img src="/results/mvi_arch.png">
-
-<br/>
-
 ## :camera_flash: Screenshots
 <img src="/results/screenshot.gif" width="480">
 
@@ -39,7 +30,7 @@
 ```
 MIT License
 
-Copyright (c) 2021 fundroid
+Copyright (c) 2023 Yang Dai
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
