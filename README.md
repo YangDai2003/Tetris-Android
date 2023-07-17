@@ -2,7 +2,6 @@
 
 English | [中文介绍](https://github.com/vitaviva/compose-tetris/blob/master/README_zh.md)
 
-![](https://img.shields.io/badge/jetpack_compose-1.0.0_beta02-green.svg)
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
 
 ## :scroll: Description
@@ -24,15 +23,6 @@ Download latest APK [here](https://github.com/vitaviva/compose-tetris/actions)
 - 100 points for 1 line, 300 points for 2 lines, 700 points for 3 lines, 1500 points for 4 lines;
 - The drop speed of the box increases with the number of rows eliminated (one level for every 20 lines);
 
-
-<br/>
-
-## :nut_and_bolt: MVI Architecture:
-
-<img src="/results/mvi_arch.png">
-
-<br/>
-
 ## :camera_flash: Screenshots
 <img src="/results/screenshot.gif" width="480">
 
@@ -41,7 +31,7 @@ Download latest APK [here](https://github.com/vitaviva/compose-tetris/actions)
 ```
 MIT License
 
-Copyright (c) 2021 fundroid
+Copyright (c) 2023 Yang Dai
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
