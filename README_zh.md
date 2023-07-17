@@ -4,6 +4,8 @@
 
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
 
+此项目基于[compose-tetris](https://github.com/vitaviva/compose-tetris)，在原有基础上做了代码优化和汉化。
+
 ## :scroll: Description
 
 基于[Jetpack Compose](https://developer.android.com/jetpack/compose)打造的俄罗斯方块游戏。包括AppIcon在内的几乎所有UI元素都由代码实现。
