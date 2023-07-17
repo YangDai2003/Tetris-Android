@@ -17,7 +17,7 @@
 - 多种游戏音响
 - 致敬[react-tetris](https://github.com/chvin/react-tetris/blob/master/README-EN.md)
 
-下载最新[APK](https://github.com/vitaviva/compose-tetris/actions)
+下载最新[APK](https://github.com/YangDai-Github/Tetris-Android/blob/master/app/release/app-release.apk)
 
 #### 游戏规则：
 - 一次消除1行得100分、2行得300分、3行得700分、4行得1500分；
