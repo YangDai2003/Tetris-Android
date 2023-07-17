@@ -1,5 +1,4 @@
-# Compose Tetris
-
+# 俄罗斯方块
 [English](https://github.com/vitaviva/fragivity/blob/master/README.md) | 中文介绍
 
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
