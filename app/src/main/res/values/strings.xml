@@ -10,5 +10,9 @@
     <string name="button_sounds">SOUNDS</string>
     <string name="button_pause">PAUSE/RESUME</string>
     <string name="button_reset">START/RESET</string>
+    <string name="score">Score</string>
+    <string name="lines">Lines</string>
+    <string name="level">Level</string>
+    <string name="next">Next</string>
 
 </resources>

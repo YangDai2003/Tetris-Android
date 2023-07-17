@@ -36,6 +36,7 @@ import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -131,22 +132,22 @@ fun GameScoreboard(
                 .fillMaxHeight()
                 .weight(0.35f)
         ) {
-            Text("Score", fontSize = textSize)
+            Text(stringResource(id = R.string.score), fontSize = textSize)
             LedNumber(Modifier.fillMaxWidth(), score, 6)
 
             Spacer(modifier = Modifier.height(margin))
 
-            Text("Lines", fontSize = textSize)
+            Text(stringResource(id = R.string.lines), fontSize = textSize)
             LedNumber(Modifier.fillMaxWidth(), line, 6)
 
             Spacer(modifier = Modifier.height(margin))
 
-            Text("Level", fontSize = textSize)
+            Text(stringResource(id = R.string.level), fontSize = textSize)
             LedNumber(Modifier.fillMaxWidth(), level, 1)
 
             Spacer(modifier = Modifier.height(margin))
 
-            Text("Next", fontSize = textSize)
+            Text(stringResource(id = R.string.next), fontSize = textSize)
             Canvas(
                 modifier = Modifier
                     .fillMaxWidth()

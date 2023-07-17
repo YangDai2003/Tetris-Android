@@ -7,4 +7,8 @@
     <string name="button_sounds">音乐</string>
     <string name="button_pause">暂停 / 恢复</string>
     <string name="button_reset">开始 / 重新开始</string>
+    <string name="score">分数</string>
+    <string name="lines">行数</string>
+    <string name="level">等级</string>
+    <string name="next">下一个</string>
 </resources>
