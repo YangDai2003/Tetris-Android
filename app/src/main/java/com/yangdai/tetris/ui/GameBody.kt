@@ -6,12 +6,11 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -22,8 +21,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -38,6 +35,10 @@ fun GameBody(
     clickable: Clickable = combinedClickable(),
     screen: @Composable () -> Unit
 ) {
+    val screenModifier = Modifier
+        .fillMaxSize()
+        .padding(6.dp)
+        .background(ScreenBackground)
 
     Column(
         Modifier
@@ -50,39 +51,10 @@ fun GameBody(
         //Screen
         Box(Modifier.align(Alignment.CenterHorizontally)) {
 
-
-            Box(
-                modifier = Modifier
-                    .align(Alignment.Center)
-                    .size(330.dp, 400.dp)
-                    .padding(top = 20.dp)
-                    .background(Color.Black.copy(alpha = 0.8f))
-                    .padding(5.dp)
-                    .background(BodyColor)
-            )
-
-            Box(
-                Modifier
-                    .width(120.dp)
-                    .height(45.dp)
-                    .align(Alignment.TopCenter)
-                    .background(BodyColor)
-            ) {
-                Text(
-                    stringResource(id = R.string.body_label),
-                    modifier = Modifier.align(Alignment.Center),
-                    textAlign = TextAlign.Center,
-                    fontFamily = FontFamily.Cursive,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp
-                )
-
-            }
-
             Box(
                 Modifier
                     .align(Alignment.Center)
-                    .size(360.dp, 380.dp)
+                    .aspectRatio(1f)
                     .padding(start = 50.dp, end = 50.dp, top = 50.dp, bottom = 30.dp)
             ) {
                 Canvas(modifier = Modifier.fillMaxSize()) {
@@ -94,12 +66,7 @@ fun GameBody(
                     )
                 }
 
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(6.dp)
-                        .background(ScreenBackground)
-                ) {
+                Box(modifier = screenModifier) {
                     screen()
                 }
             }
@@ -109,7 +76,8 @@ fun GameBody(
 
         val settingText = @Composable { text: String, modifier: Modifier ->
             Text(
-                text, modifier = modifier,
+                text,
+                modifier = modifier,
                 color = Color.Black.copy(0.9f),
                 fontSize = 12.sp,
                 textAlign = TextAlign.Center
@@ -168,7 +136,8 @@ fun GameBody(
         val buttonText = @Composable { modifier: Modifier,
                                        text: String ->
             Text(
-                text, modifier = modifier,
+                text,
+                modifier = modifier,
                 color = Color.White.copy(0.9f),
                 fontSize = 18.sp
             )
@@ -176,7 +145,7 @@ fun GameBody(
 
         Row(
             modifier = Modifier
-                .padding(start = 40.dp, end = 40.dp)
+                .padding(start = 40.dp, end = 40.dp, top = 20.dp)
                 .height(160.dp)
         ) {
             //DIRECTION BTN

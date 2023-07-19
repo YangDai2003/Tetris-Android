@@ -3,7 +3,4 @@
     <style name="Theme.tetris" parent="Theme.Material3.DynamicColors.Light">
     </style>
 
-    <style name="Theme.Composetetris.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.Composetetris.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

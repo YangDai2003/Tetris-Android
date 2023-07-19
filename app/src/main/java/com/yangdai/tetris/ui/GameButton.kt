@@ -1,5 +1,6 @@
 package com.yangdai.tetris.ui
 
+import android.annotation.SuppressLint
 import android.view.MotionEvent.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -33,6 +34,7 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 
 
+@SuppressLint("UnrememberedMutableInteractionSource")
 @OptIn(ExperimentalComposeUiApi::class, ObsoleteCoroutinesApi::class)
 @Composable
 fun GameButton(

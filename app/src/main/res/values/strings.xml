@@ -8,8 +8,8 @@
     <string name="button_right" translatable="false">▶</string>
     <string name="button_down" translatable="false">▼</string>
     <string name="button_sounds">SOUNDS</string>
-    <string name="button_pause">PAUSE/RESUME</string>
-    <string name="button_reset">START/RESET</string>
+    <string name="button_pause">PAUSE / RESUME</string>
+    <string name="button_reset">START / RESET</string>
     <string name="score">Score</string>
     <string name="lines">Lines</string>
     <string name="level">Level</string>
