@@ -24,7 +24,7 @@
 - 方块掉落速度会随着消除的行数增加（每20行增加一个级别）；
 
 ## :camera_flash: Screenshots
-<img src="https://github.com/YangDai-Github/Tetris-Android/assets/107718193/f5301e28-ed95-4698-ab29-e9f8e2ab11c0" width="480">
+<img src="https://github.com/YangDai-Github/Tetris-Android/assets/107718193/2c515173-be52-42f9-b395-871781ee8efc" width="480">
 
 ## License
 ```
