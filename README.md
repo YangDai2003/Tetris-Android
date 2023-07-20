@@ -1,6 +1,6 @@
 # Tetris
 
-English | [中文介绍](https://github.com/vitaviva/compose-tetris/blob/master/README_zh.md)
+English | [中文介绍](https://github.com/YangDai-Github/Tetris-Android/blob/master/README_zh.md)
 
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
 
