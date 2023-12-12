@@ -1,6 +1,6 @@
 # Tetris
 
-English | [中文介绍](https://github.com/vitaviva/compose-tetris/blob/master/README_zh.md)
+English | [中文介绍](https://github.com/YangDai-Github/Tetris-Android/blob/master/README_zh.md)
 
 ![](https://img.shields.io/badge/min_sdk_versioin-21-orange.svg)
 
@@ -26,7 +26,7 @@ Download latest APK [here](https://github.com/YangDai-Github/Tetris-Android/blob
 - The drop speed of the box increases with the number of rows eliminated (one level for every 20 lines);
 
 ## :camera_flash: Screenshots
-<img src="https://github.com/YangDai-Github/Tetris-Android/assets/107718193/9520a96a-c4ec-4429-a124-a4522d0efde3" width="20%">
+<img src="https://github.com/YangDai-Github/Tetris-Android/assets/107718193/e568989b-64d3-44ea-bbcf-8b3e8023fadc" width="20%">
 
 ## License
 ```
