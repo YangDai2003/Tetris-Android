@@ -4,8 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+//noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.material3.Surface
+
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLifecycleOwner
@@ -74,7 +76,7 @@ class MainActivity : ComponentActivity() {
                             viewModel.dispatch(Action.Reset)
                         },
                         onPause = {
-                            if (viewModel.viewState.value.isRuning) {
+                            if (viewModel.viewState.value.isRunning) {
                                 viewModel.dispatch(Action.Pause)
                             } else {
                                 viewModel.dispatch(Action.Resume)

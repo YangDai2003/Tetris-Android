@@ -1,6 +1,7 @@
 package com.yangdai.tetris.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
+//noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.material.Shapes
 import androidx.compose.ui.unit.dp
 

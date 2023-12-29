@@ -53,7 +53,6 @@ object StatusBarUtil {
 
     fun transparentStatusBar(activity: Activity) {
         with(activity) {
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             val option = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
             val vis = window.decorView.systemUiVisibility
@@ -94,11 +93,11 @@ object SoundUtil {
 }
 
 sealed class SoundType(val res: Int) {
-    object Move : SoundType(R.raw.move)
-    object Rotate : SoundType(R.raw.rotate)
-    object Start : SoundType(R.raw.start)
-    object Drop : SoundType(R.raw.drop)
-    object Clean : SoundType(R.raw.clean)
+    data object Move : SoundType(R.raw.move)
+    data object Rotate : SoundType(R.raw.rotate)
+    data object Start : SoundType(R.raw.start)
+    data object Drop : SoundType(R.raw.drop)
+    data object Clean : SoundType(R.raw.clean)
 }
 
 val Sounds =

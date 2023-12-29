@@ -20,7 +20,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -70,12 +70,13 @@ fun GameScreen(modifier: Modifier = Modifier) {
             .padding(10.dp)
     ) {
 
-        val animateValue by rememberInfiniteTransition().animateFloat(
+        val animateValue by rememberInfiniteTransition(label = "").animateFloat(
             initialValue = 0f, targetValue = 0.7f,
             animationSpec = infiniteRepeatable(
                 animation = tween(durationMillis = 1500),
                 repeatMode = RepeatMode.Reverse,
             ),
+            label = "",
         )
 
         Canvas(

@@ -49,7 +49,7 @@ class GameViewModel : ViewModel() {
                         }
                     }
 
-                    Action.Pause -> if (state.isRuning) {
+                    Action.Pause -> if (state.isRunning) {
                         state.copy(gameStatus = GameStatus.Paused)
                     } else state
 
@@ -59,7 +59,7 @@ class GameViewModel : ViewModel() {
                         } else state
 
                     is Action.Move -> run {
-                        if (!state.isRuning) return@run state
+                        if (!state.isRunning) return@run state
                         SoundUtil.play(state.isMute, SoundType.Move)
                         val offset = action.direction.toOffset()
                         val spirit = state.spirit.moveBy(offset)
@@ -71,7 +71,7 @@ class GameViewModel : ViewModel() {
                     }
 
                     Action.Rotate -> run {
-                        if (!state.isRuning) return@run state
+                        if (!state.isRunning) return@run state
                         SoundUtil.play(state.isMute, SoundType.Rotate)
                         val spirit = state.spirit.rotate().adjustOffset(state.matrix)
                         if (spirit.isValidInMatrix(state.bricks, state.matrix)) {
@@ -82,7 +82,7 @@ class GameViewModel : ViewModel() {
                     }
 
                     Action.Drop -> run {
-                        if (!state.isRuning) return@run state
+                        if (!state.isRunning) return@run state
                         SoundUtil.play(state.isMute, SoundType.Drop)
                         var i = 0
                         while (state.spirit.moveBy(0 to ++i)
@@ -95,7 +95,7 @@ class GameViewModel : ViewModel() {
                     }
 
                     Action.GameTick -> run {
-                        if (!state.isRuning) return@run state
+                        if (!state.isRunning) return@run state
 
                         //Spirit continue falling
                         if (state.spirit != Empty) {
@@ -258,7 +258,7 @@ class GameViewModel : ViewModel() {
         val isPaused
             get() = gameStatus == GameStatus.Paused
 
-        val isRuning
+        val isRunning
             get() = gameStatus == GameStatus.Running
     }
 
@@ -266,13 +266,13 @@ class GameViewModel : ViewModel() {
 
 sealed interface Action {
     data class Move(val direction: Direction) : Action
-    object Reset : Action
-    object Pause : Action
-    object Resume : Action
-    object Rotate : Action
-    object Drop : Action
-    object GameTick : Action
-    object Mute : Action
+    data object Reset : Action
+    data object Pause : Action
+    data object Resume : Action
+    data object Rotate : Action
+    data object Drop : Action
+    data object GameTick : Action
+    data object Mute : Action
 }
 
 enum class GameStatus {

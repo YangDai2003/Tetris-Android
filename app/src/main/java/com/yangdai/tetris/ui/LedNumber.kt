@@ -12,7 +12,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
@@ -37,12 +37,13 @@ import kotlin.math.roundToInt
 @Composable
 fun LedClock(modifier: Modifier = Modifier) {
 
-    val animateValue by rememberInfiniteTransition().animateFloat(
+    val animateValue by rememberInfiniteTransition(label = "").animateFloat(
         initialValue = 0f, targetValue = 1f,
         animationSpec = infiniteRepeatable(
             animation = tween(durationMillis = 1000, easing = LinearEasing),
             repeatMode = RepeatMode.Restart,
         ),
+        label = "",
     )
 
     var clock by remember { mutableStateOf(0 to 0) }
